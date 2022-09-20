@@ -1,7 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="uni.dcloud.io.uniplugin_module">
+    <!--      android:name="io.dcloud.uniplugin.PluginApp"-->
+    <application android:name="io.dcloud.uniplugin.PluginApp">
 
-    <application>
+        <meta-data
+            android:name="dcloud_appkey"
+            android:value="ec37299cad24cfff5e3b0eb533c62f9c" />
         <activity
             android:name="io.dcloud.uniplugin.NativePageActivity"
             android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"></activity>
