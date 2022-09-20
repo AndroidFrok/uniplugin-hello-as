@@ -69,7 +69,6 @@ repositories {
     }
 }
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation fileTree(dir: 'libs', include: ['*.aar'])
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'

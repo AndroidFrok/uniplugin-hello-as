@@ -1,13 +1,13 @@
-/*plugins {
+plugins {
     id 'com.android.application'
-}*/
+}
 def version = 31
-apply plugin: 'com.android.library'
+//apply plugin: 'com.android.library'
 android {
     compileSdkVersion version
 
     defaultConfig {
-//        applicationId "com.qingting.fk"
+        applicationId "com.qingting.fk"
         minSdkVersion 21
         targetSdkVersion version
         versionCode 1
