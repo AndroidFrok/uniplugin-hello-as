@@ -1,7 +1,4 @@
-#Mon Sep 05 17:02:58 CST 2022
-base.1=F\:\\codes\\android\\Android-SDK@3.5.3.81428_20220801\\UniPlugin-Hello-AS\\app\\build\\intermediates\\dex\\debug\\minifyDebugWithR8\\classes2.dex
-path.1=classes2.dex
+#Tue Sep 20 15:40:59 CST 2022
 base.0=F\:\\codes\\android\\Android-SDK@3.5.3.81428_20220801\\UniPlugin-Hello-AS\\app\\build\\intermediates\\dex\\debug\\minifyDebugWithR8\\classes.dex
-renamed.1=classes2.dex
 renamed.0=classes.dex
 path.0=classes.dex

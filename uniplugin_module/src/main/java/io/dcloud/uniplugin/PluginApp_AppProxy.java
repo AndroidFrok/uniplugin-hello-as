@@ -1,6 +1,7 @@
 package io.dcloud.uniplugin;
 
 import android.app.Application;
+import android.widget.Toast;
 
 import io.dcloud.feature.uniapp.UniAppHookProxy;
 
@@ -12,11 +13,13 @@ public class PluginApp_AppProxy implements UniAppHookProxy {
 
     @Override
     public void onCreate(Application application) {
+        Toast.makeText(application, "PluginApp_AppProxy", Toast.LENGTH_LONG).show();
         DebugLogUtil.getInstance().Debug("UniApp - onCreate  ");
     }
 
     @Override
     public void onSubProcessCreate(Application application) {
+        Toast.makeText(application, "PluginApp_AppProxy  onSubProcessCreate", Toast.LENGTH_LONG).show();
         DebugLogUtil.getInstance().Debug("PluginApp - onSubProcessCreate  ");
     }
 }

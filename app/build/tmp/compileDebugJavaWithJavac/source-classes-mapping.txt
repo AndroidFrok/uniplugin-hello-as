@@ -1,4 +1,6 @@
 com/qingting/fk/MainActivity.java
  com.qingting.fk.MainActivity
+com/qingting/fk/MyApp.java
+ com.qingting.fk.MyApp
 com/android/UniPlugin/BuildConfig.java
  com.android.UniPlugin.BuildConfig

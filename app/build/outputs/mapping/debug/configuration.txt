@@ -265,26 +265,12 @@
 # End of content from F:\codes\android\Android-SDK@3.5.3.81428_20220801\UniPlugin-Hello-AS\app\proguard-rules.pro
 # The proguard configuration file for the following section is F:\codes\android\Android-SDK@3.5.3.81428_20220801\UniPlugin-Hello-AS\app\build\intermediates\aapt_proguard_file\debug\aapt_rules.txt
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
--keep class com.dmcbig.mediapicker.PickerActivity { <init>(); }
--keep class com.dmcbig.mediapicker.PreviewActivity { <init>(); }
 -keep class com.qingting.fk.MainActivity { <init>(); }
 -keep class com.taobao.weex.WXGlobalEventReceiver { <init>(); }
--keep class io.dcloud.PandoraEntry { <init>(); }
--keep class io.dcloud.PandoraEntryActivity { <init>(); }
--keep class io.dcloud.ProcessMediator { <init>(); }
--keep class io.dcloud.WebAppActivity { <init>(); }
--keep class io.dcloud.WebviewActivity { <init>(); }
--keep class io.dcloud.ads.activity.WebViewActivity { <init>(); }
--keep class io.dcloud.ads.base.service.DownloadService { <init>(); }
--keep class io.dcloud.ads.base.service.provider.DCloudAdFileProvider { <init>(); }
--keep class io.dcloud.application.DCloudApplication { <init>(); }
--keep class io.dcloud.common.adapter.io.DownloadReceiver { <init>(); }
--keep class io.dcloud.common.util.DCloud_FileProvider { <init>(); }
 -keep class io.dcloud.debug.PullDebugActivity { <init>(); }
 -keep class io.dcloud.debug.PullService { <init>(); }
--keep class io.dcloud.feature.gallery.imageedit.IMGEditActivity { <init>(); }
--keep class io.dcloud.feature.nativeObj.photoview.PhotoActivity { <init>(); }
 -keep class io.dcloud.uniplugin.NativePageActivity { <init>(); }
+-keep class io.dcloud.uniplugin.PluginApp { <init>(); }
 -keep class android.widget.Space { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class androidx.appcompat.app.AlertController$RecycleListView { <init>(android.content.Context, android.util.AttributeSet); }
@@ -335,14 +321,6 @@
 
 -keep class androidx.recyclerview.widget.RecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
 
--keep class androidx.viewpager.widget.ViewPager { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.dcloud.android.widget.TextViewButton { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.dcloud.android.widget.photoview.PhotoView { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.dmcbig.mediapicker.view.HackyViewPager { <init>(android.content.Context, android.util.AttributeSet); }
-
 -keep class com.google.android.material.appbar.MaterialToolbar { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class com.google.android.material.button.MaterialButton { <init>(android.content.Context, android.util.AttributeSet); }
@@ -382,18 +360,6 @@
 -keep class com.google.android.material.timepicker.TimePickerView { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class com.taobao.weex.ui.view.listview.WXRecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class io.dcloud.common.ui.GifImageView { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class io.dcloud.feature.gallery.imageedit.view.IMGColorGroup { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class io.dcloud.feature.gallery.imageedit.view.IMGColorRadio { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class io.dcloud.feature.gallery.imageedit.view.IMGView { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class io.dcloud.feature.gallery.imageedit.view.WindowInsertLinearLayout { <init>(android.content.Context, android.util.AttributeSet); }
-
--keepclassmembers class * { *** onClick(android.view.View); }
 
 
 # End of content from F:\codes\android\Android-SDK@3.5.3.81428_20220801\UniPlugin-Hello-AS\app\build\intermediates\aapt_proguard_file\debug\aapt_rules.txt
