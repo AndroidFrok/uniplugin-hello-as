@@ -2,12 +2,9 @@
     package="uni.dcloud.io.uniplugin_module">
 
     <application>
-
-        <meta-data
-            android:name="dcloud_appkey"
-            android:value="ec37299cad24cfff5e3b0eb533c62f9c" />
         <activity
             android:name="io.dcloud.uniplugin.NativePageActivity"
             android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"></activity>
     </application>
+
 </manifest>
