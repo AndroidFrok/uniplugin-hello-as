@@ -1,11 +1,10 @@
 {
   "nativePlugins": [
     {
-      "hooksClass": "io.dcloud.uniplugin.PluginApp_AppProxy",
       "plugins": [
         {
           "type": "module",
-          "name": "uniplugin_module",
+          "name": "TestModule",
           "class": "io.dcloud.uniplugin.TestModule"
         }
       ]

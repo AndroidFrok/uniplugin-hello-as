@@ -4,7 +4,7 @@
             "outputFile": "F:\\codes\\android\\Android-SDK@3.5.3.81428_20220801\\UniPlugin-Hello-AS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ldltr-v17\\values-ldltr-v17.xml",
             "map": [
                 {
-                    "source": "G:\\android\\.gradle\\caches\\transforms-2\\files-2.1\\dc2dc0c74a9b368f4596fd56ff438715\\jetified-uniapp-v8-release\\res\\values-ldltr-v17\\values-ldltr-v17.xml",
+                    "source": "G:\\android\\.gradle\\caches\\transforms-2\\files-2.1\\5de7203c9410a68274a993ed4240b939\\jetified-uniapp-v8-release\\res\\values-ldltr-v17\\values-ldltr-v17.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
