@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="uni.dcloud.io.uniplugin_module">
 
-    <application android:name="io.dcloud.uniplugin.PluginApp">
+    <application>
 
         <meta-data
             android:name="dcloud_appkey"

@@ -13,13 +13,13 @@ public class PluginApp_AppProxy implements UniAppHookProxy {
 
     @Override
     public void onCreate(Application application) {
-        Toast.makeText(application, "PluginApp_AppProxy", Toast.LENGTH_LONG).show();
-        DebugLogUtil.getInstance().Debug("UniApp - onCreate  ");
+//        Toast.makeText(application, "uniPlugin _AppProxy", Toast.LENGTH_LONG).show();
+        DebugLogUtil.getInstance().Debug("uniPlugin _AppProxy - onCreate  ");
     }
 
     @Override
     public void onSubProcessCreate(Application application) {
-        Toast.makeText(application, "PluginApp_AppProxy  onSubProcessCreate", Toast.LENGTH_LONG).show();
+//        Toast.makeText(application, "PluginApp_AppProxy  onSubProcessCreate", Toast.LENGTH_LONG).show();
         DebugLogUtil.getInstance().Debug("PluginApp - onSubProcessCreate  ");
     }
 }
