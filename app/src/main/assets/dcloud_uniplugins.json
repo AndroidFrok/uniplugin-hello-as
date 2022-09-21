@@ -1,6 +1,7 @@
 {
   "nativePlugins": [
     {
+      "hooksClass": "io.dcloud.uniplugin.PluginApp_AppProxy",
       "plugins": [
         {
           "type": "module",
@@ -19,7 +20,6 @@
       ]
     },
     {
-      "hooksClass": "",
       "plugins": [
         {
           "type": "module",
