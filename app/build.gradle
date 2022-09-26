@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 32
-    buildToolsVersion '28.0.3'
     defaultConfig {
 //        applicationId "com.android.UniPlugin"
         applicationId "com.qingting.fk"
@@ -14,7 +13,7 @@ android {
         versionName "1.0"
         multiDexEnabled true
         ndk {
-            abiFilters 'x86', 'armeabi-v7a'
+            abiFilters 'x86', 'armeabi-v7a','arm64-v8a'
         }
         compileOptions {
             sourceCompatibility JavaVersion.VERSION_1_8
@@ -54,6 +53,7 @@ android {
         //noCompress 'foo', 'bar'
         ignoreAssetsPattern "!.svn:!.git:.*:!CVS:!thumbs.db:!picasa.ini:!*.scc:*~"
     }
+    buildToolsVersion '32.0.0'
     /*代码结束*/
 }
 repositories {
@@ -64,7 +64,7 @@ repositories {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation fileTree(dir: 'libs', include: ['*.aar'])
-
+    compileOnly fileTree(dir: '../app/libs', include: ['uniapp-v8-release.aar'])
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.appcompat:appcompat:1.0.0'
 
