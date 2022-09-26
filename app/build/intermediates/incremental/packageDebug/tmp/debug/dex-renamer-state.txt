@@ -1,4 +1,0 @@
-#Wed Sep 21 16:35:28 CST 2022
-base.0=F\:\\codes\\android\\Android-SDK@3.5.3.81428_20220801\\UniPlugin-Hello-AS\\app\\build\\intermediates\\dex\\debug\\minifyDebugWithR8\\classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
