@@ -18,6 +18,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 
 }
 
@@ -33,7 +37,7 @@ dependencies {
     compileOnly 'androidx.recyclerview:recyclerview:1.0.0'
     compileOnly 'androidx.legacy:legacy-support-v4:1.0.0'
     compileOnly 'androidx.appcompat:appcompat:1.0.0'
-    compileOnly 'com.alibaba:fastjson:1.1.46.android'
+    compileOnly 'com.alibaba:fastjson:1.2.83'
 
     compileOnly fileTree(dir: '../app/libs', include: ['uniapp-v8-release.aar'])
 

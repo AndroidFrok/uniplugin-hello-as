@@ -147,5 +147,3 @@
 
 -keep class androidtranscoder.**{*;}
 -keep class XI.**{*;}
--keep public class * extends io.dcloud.feature.uniapp.common.UniModule{*;}
--keep public class * extends io.dcloud.feature.uniapp.ui.component.UniComponent{*;}

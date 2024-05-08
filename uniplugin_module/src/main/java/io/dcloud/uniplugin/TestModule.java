@@ -3,7 +3,6 @@ package io.dcloud.uniplugin;
 import android.app.Activity;
 import android.content.Intent;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.alibaba.fastjson.JSONObject;
 
@@ -20,8 +19,8 @@ public class TestModule extends UniModule {
     //run ui thread
     @UniJSMethod(uiThread = true)
     public void testAsyncFunc(JSONObject options, UniJSCallback callback) {
-        Log.e(TAG, "testAsyncFunc--" + options);
-        if (callback != null) {
+        Log.e(TAG, "testAsyncFunc--"+options);
+        if(callback != null) {
             JSONObject data = new JSONObject();
             data.put("code", "success");
             callback.invoke(data);
@@ -30,8 +29,8 @@ public class TestModule extends UniModule {
     }
 
     //run JS thread
-    @UniJSMethod(uiThread = false)
-    public JSONObject testSyncFunc() {
+    @UniJSMethod (uiThread = false)
+    public JSONObject testSyncFunc(){
         JSONObject data = new JSONObject();
         data.put("code", "success");
         return data;
@@ -39,19 +38,18 @@ public class TestModule extends UniModule {
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == REQUEST_CODE && data.hasExtra("respond")) {
-            Log.e("TestModule", "原生页面返回----" + data.getStringExtra("respond"));
+        if(requestCode == REQUEST_CODE && data.hasExtra("respond")) {
+            Log.e("TestModule", "原生页面返回----"+data.getStringExtra("respond"));
         } else {
             super.onActivityResult(requestCode, resultCode, data);
         }
     }
 
-    @UniJSMethod(uiThread = true)
-    public void gotoNativePage() {
-        Toast.makeText(mUniSDKInstance.getContext(), "android...............", Toast.LENGTH_SHORT).show();
-        if (mUniSDKInstance != null && mUniSDKInstance.getContext() instanceof Activity) {
+    @UniJSMethod (uiThread = true)
+    public void gotoNativePage(){
+        if(mUniSDKInstance != null && mUniSDKInstance.getContext() instanceof Activity) {
             Intent intent = new Intent(mUniSDKInstance.getContext(), NativePageActivity.class);
-            ((Activity) mUniSDKInstance.getContext()).startActivityForResult(intent, REQUEST_CODE);
+            ((Activity)mUniSDKInstance.getContext()).startActivityForResult(intent, REQUEST_CODE);
         }
     }
 }

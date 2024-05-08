@@ -6,8 +6,6 @@
 /.idea/modules.xml
 /.idea/workspace.xml
 .DS_Store
-app/build
+/build
 /captures
 .externalNativeBuild
-.idea/*
-uniplugin_module/build
